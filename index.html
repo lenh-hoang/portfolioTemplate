@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--HEADING FONT-->
+    <!--Feel free to use any font or font combos.-->
+    <link href="https://fonts.googleapis.com/css?family=Overpass:100,300,400,700,900" rel="stylesheet">
+    
+    <!--BODY FONT-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700,900" rel="stylesheet">
+
+    <!--CSS-->
+    <!--If you are not using SASS, use "main.css" to edit. All class names remain the same.-->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+<body>
+
+    <!--BACK TO TOP BUTTON.
+        To edit css go to "layout/_topPage.scss"
+        To edit js go to "js/main.js"-->
+   <a id="toTop" class="toTop">
+        <svg class="toTop__icon">
+            <use xlink:href="img/sprite.svg#icon-arrow-bold-up"></use>
+        </svg>
+        <span class="toTop__text">Back to top</span>
+   </a>
+
+   <!--CONTAINER. To edit please go to "layout/_container.scss"-->
+    <div class="container">
+        <header class="header">
+            <!--LOGO/SOCIAL/EMAIL. To edit go to "layout/_header.scss-->
+            <div class="connections">
+
+                <!--LOGO HERE-->
+                <!--MAKE SURE TO REMOVE BACKGROUND COLOR AFTER ADDING PICTURE. TO DO SO GO TO "layout/_header.scss" UNDER THE LOGO SECTION-->
+                <a href="index.html"><img src="" alt="" class="logo-photo"></a>
+                <ul class="social-media">
+                   <li class="social-media__item">
+                       <a href="#" target="_blank" class="social-media__link btn btn--expand">Link</a> <!--Ex. LinkedIn-->
+                   </li>
+                   <li class="social-media__item">
+                       <a href="#" target="_blank" class="social-media__link btn btn--expand">Link</a>
+                   </li>
+                   <li class="social-media__item">
+                       <a href="#" target="_blank" class="social-media__link btn btn--expand">Link</a>
+                   </li>
+                   <!--OPTIONAL EMAIL LINK OR TEXT-->
+                    <li class="social-media__item"><span class="custom-text">example@email.com</span></li> 
+                </ul>
+            </div>
+        </header>
+        
+        <!--TITLE-->
+        <div class="section-title">
+            <h1 class="heading-primary center">TITLE HERE</h1>
+        </div>
+        <!--CONTENT-->
+        <main>
+            <!--GO to "pages/_home.scss" to edit class="section-portfolio"-->
+            <section class="section-portfolio">
+
+                <!--Go to "layout/_portfolio.scss" to edit grid system-->
+                    <div class="portfolio">
+
+                    <!--This grid is setup in two columns and the rows can run infinitely. You can add as much
+                        projects as you'd like, just be sure to name the item div properly. Currently there is
+                        four empty blanks for you to put work in, but you're free to remove or add however many 
+                        to fit your need.-->
+
+                    <!--To add another box to the grid just copy and paste the entire div of any of the previous
+                        boxes and change the number within the classes. Head to bottom of page to see example of how
+                        to add a new box.-->
+
+                    <!--After adding new box, head over to the layout folder and look for the file "_portfolio.scss
+                        and follow the instructions within.-->
+                        <div class="portfolio__item-1">
+
+                            <!--ADD LINK HERE-->
+                            <a href="project.html">
+                                
+                                <!--ADD PICTURE HERE-->
+
+                                <!--**IMPORTANT PLEASE READ**
+                                    After adding an image, GO TO "layout/_portfolio.scss" and REMOVE ALL the prompted settings INDICATED for removal!!-->
+                                <img src="" alt="" class = "portfolio__item-1--img">
+                                <div class="portfolio__item-1--overlay">
+                                    <span class="portfolio__item-1--title">
+                                        Project title
+                                    </span>
+                                    <span class="portfolio__item-1--type">
+                                        Type of work
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="portfolio__item-2">
+
+                            <!--ADD LINK HERE-->
+                            <a href="#!">
+
+                                <!--ADD PICTURE HERE-->
+                                <img src="" alt="" class = "portfolio__item-2--img">
+                                <div class="portfolio__item-2--overlay">
+                                    <span class="portfolio__item-2--title">
+                                        Project title
+                                    </span>
+                                    <span class="portfolio__item-2--type">
+                                        Type of work
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="portfolio__item-3">
+
+                            <!--ADD LINK HERE-->
+                            <a href="#!">
+
+                                <!--ADD PICTURE HERE-->
+                                <img src="" alt="" class = "portfolio__item-3--img">
+                                <div class="portfolio__item-3--overlay">
+                                    <span class="portfolio__item-3--title">
+                                        Project title
+                                    </span>
+                                    <span class="portfolio__item-3--type">
+                                        Type of work
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="portfolio__item-4">
+
+                            <!--ADD LINK HERE-->
+                            <a href="#!">
+
+                                <!--ADD PICTURE HERE-->
+                                <img src="" alt="" class = "portfolio__item-4--img">
+                                <div class="portfolio__item-4--overlay">
+                                    <span class="portfolio__item-4--title">
+                                        Project title
+                                    </span>
+                                    <span class="portfolio__item-4--type">
+                                        Type of work
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+
+                    <!--Here is an example of a new box added to the grid.
+
+                        <div class="portfolio__item-5">
+                                <a href="projectThree.html">
+                                    <img src="" alt="" class="portfolio__item-5--img">
+                                    <div class="portfolio__item-5--overlay">
+                                        <span class="portfolio__item-5--title">
+                                            Project
+                                        </span>
+                                        <span class="portfolio__item-5--type">
+                                            Type of work
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                    -->
+                    </div>
+
+            </section>
+        </main>
+        
+        <!--FOOTER. To edit, please go to "layout/_footer.scss"-->
+        <footer class="footer">
+            <!--Change copyright text here. To edit, please find go to "base/_typography.scs"-->
+            <span class="copyright">&copy;Copyright here.</span>
+        </footer>
+    </div>
+    
+    <!--JAVASCRIPT-->
+    <script src="js/main.js"></script>
+</body>
+</html>

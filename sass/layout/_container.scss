@@ -1,0 +1,17 @@
+///////////////////////////////////////
+//CONTAINER
+.container {
+    
+    //CENTERING BODY
+    width: 60%;
+    margin: 0 auto;
+    
+    @include respond(tablet) {
+        width: 65%;
+    }
+    
+    @include respond(phone) {
+        width: 70%;
+    }
+    
+}

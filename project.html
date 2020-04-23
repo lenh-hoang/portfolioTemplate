@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Project Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--HEADING FONT-->
+    <!--Feel free to use any font or font combos.-->
+    <link href="https://fonts.googleapis.com/css?family=Overpass:100,300,400,700,900" rel="stylesheet">
+    
+    <!--BODY FONT-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700,900" rel="stylesheet">
+
+    <!--CSS-->
+    <!--If you are not using SASS, use "main.css" to edit. All class names remain the same.-->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+<body>
+
+    <!--BACK TO TOP BUTTON.
+        To edit css go to "layout/_topPage.scss"
+        To edit js go to "js/main.js"-->
+   <a id="toTop" class="toTop">
+        <svg class="toTop__icon">
+            <use xlink:href="img/sprite.svg#icon-arrow-bold-up"></use>
+        </svg>
+        <span class="toTop__text">Back to top</span>
+   </a>
+
+   <!--CONTAINER. To edit please go to "layout/_container.scss"-->
+    <div class="container">
+        <header class="header">
+            <!--LOGO/SOCIAL/EMAIL. To edit go to "layout/_header.scss-->
+            <div class="connections">
+
+                <!--LOGO HERE-->
+                <!--MAKE SURE TO REMOVE BACKGROUND COLOR AFTER ADDING PICTURE. TO DO SO GO TO "layout/_header.scss" UNDER THE LOGO SECTION-->
+                <a href="index.html"><img src="" alt="" class="logo-photo"></a>
+                <ul class="social-media">
+                   <li class="social-media__item">
+                       <a href="#" target="_blank" class="social-media__link btn btn--expand">Link</a> <!--Ex. LinkedIn-->
+                   </li>
+                   <li class="social-media__item">
+                       <a href="#" target="_blank" class="social-media__link btn btn--expand">Link</a>
+                   </li>
+                   <li class="social-media__item">
+                       <a href="#" target="_blank" class="social-media__link btn btn--expand">Link</a>
+                   </li>
+                   <!--OPTIONAL EMAIL LINK OR TEXT-->
+                    <li class="social-media__item"><span class="custom-text">example@email.com</span></li> 
+                </ul>
+            </div>
+        </header>
+
+        <!--SOURCES HERE. Feel free to add more links.-->
+        <section class="section-sources">
+
+            <!--To edit sources-lest, please go to "layout/_content.scss"-->
+            <ul class="sources-list">
+                
+                <!--ADD LINK HERE-->
+                <li class="sources-list__items"><a href="#!" target="_blank" class="sources-list__link btn btn--slide">Source</a></li>
+            </ul>
+        </section>
+
+        <!--TITLE-->
+        <div class="section-title">
+            <h1 class="heading-primary center">Title here</h1>
+        </div>
+
+        <!--CONTENT-->
+        <main>
+        
+        
+        <!--**IMPORTANT** To edit the padding of each section, please go to "pages/_projects.scss"-->
+
+
+
+            <!--SHOWCASE IMAGE. Use this section to show images by itself.-->
+            <section class="section-img">
+
+                <!--ADD IMAGE HERE. This div can actually be used anywhere in the content section, just make sure to edit 
+                    when necessary.-->
+
+                <!--**IMPORTANT PLEASE READ**
+                    After adding an image, go to "layout/_content.scss" and remove the height and other prompted setting to avoid problems!-->
+                <div class="showcase"><img src="" alt="" class="showcase__img"></div>
+            </section>
+
+            <!--INTRODUCTION HERE. Introduce your project/work.-->
+            <section class="section-intro">
+
+                <!--To edit heading, go to "base/_typography.scss"-->
+                <h3 class="heading-tertiary margin-bot-md">Introduction</h3>
+
+                <!--To edit paragraph, go to "base/_typography.scss"-->
+                <p class="paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat.  
+                </p>  
+            </section>
+
+            <!--START. After introduction, begin explain the process or showing your work.-->
+            <section class="section-start">
+                <h3 class="heading-tertiary margin-bot-md">
+                    Begin explaination here.
+                </h3>
+                <p class="paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                    ex ea commodo consequat. 
+                </p>
+            </section>
+
+            <!--Example of how to use section-img elsewhere.-->
+            <section class="section-img">
+                <h3 class="heading-tertiary margin-bot-md">
+                    Imagine example.
+                </h3>
+                <div class="showcase margin-bot-md">
+                    <img src="" alt="" class="showcase__img">
+                </div>
+            </section>
+
+            <!--SECTION MIDDLE. Everything in between start and end. This section is versatile as you can use as many of these sections
+                to get your point across. -->
+            <section class="section-middle">
+                <h3 class="heading-tertiary margin-bot-md">
+                    Middle section
+                </h3>
+                <p class="paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat.
+                </p>
+            </section>
+            <!--Example of how to use section-img elsewhere.-->
+            <section class="section-img">
+                    <h3 class="heading-tertiary margin-bot-md">
+                        Imagine example.
+                    </h3>
+                    <div class="showcase margin-bot-md">
+                        <img src="" alt="" class="showcase__img">
+                    </div>
+            </section>
+
+            <!--Example of another middle section-->
+            <section class="section-middle">
+                <h3 class="heading-tertiary margin-bot-md">Middle section 2</h3>
+                <p class="paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat.
+                </p>
+            </section>
+
+            <!--SECTION END. Make your final remarks here to close out the page.-->
+            <section class="section-end">
+                <h3 class="heading-tertiary margin-bot-md">End Here.</h3>
+                <p class="paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat. 
+                </p>
+            </section>
+        </main>
+        
+         <!--FOOTER. To edit, please go to "layout/_footer.scss"-->
+        <footer class="footer">
+            <!--Change copyright text here. To edit, please find go to "base/_typography.scs"-->
+            <span class="copyright">&copy;Copyright here.</span>
+        </footer>
+    </div>
+
+    <!--JAVASCRIPT-->
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

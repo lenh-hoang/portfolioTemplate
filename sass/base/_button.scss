@@ -1,0 +1,52 @@
+////////////////////////////////////////////////
+//Everything here is optional and here for convienence. Feel free to create new classes.
+.btn {
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        cursor: pointer;
+        
+    }
+    
+    //Expanding animation
+    &--expand {
+        color: var(--color-grey-dark);
+        
+        &:hover {
+            border: 2px solid var(--color-primary);
+            background-color: var(--color-primary);
+            color: white;
+            padding: .5rem 1rem;
+            box-shadow: var(--shadow);
+            transition: all .2s ease-out;
+            -webkit-transition: all .2s ease-out;
+        }
+        
+    }
+    
+    //Sliding animation
+    &--slide {
+        color: var(--color-primary);
+        border: 2.5px solid var(--color-primary);
+        background: linear-gradient( to left, var(--color-white) 50%, var(--color-primary) 50% );
+        background-size: 210% 100%;
+        padding: 1rem 2rem;
+        background-position: right bottom;
+        
+        &:hover {
+            background-position: left bottom;
+            color: var(--color-white);
+            transition: all .25s ease-out;
+            -webkit-transition: all .25s ease-out;
+        }
+        
+        @include respond(phone) {
+            border: 2px solid var(--color-primary);
+        }
+    }
+    
+
+    
+}

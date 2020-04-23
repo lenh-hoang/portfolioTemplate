@@ -1,0 +1,114 @@
+////////////////////////////////////////////////
+//DEFAULT FONT SETTINGS
+body {
+    font-family: "Overpass", sans-serif;
+    font-weight: 400;
+    line-height: 1.6rem;
+}
+
+////////////////////////////////////////////////
+//Everything here is optional and here for convienence. Feel free to create new classes.
+
+////////////////////////////////////////////////
+//Use for paragraph tags.
+.paragraph {
+    font-family: var(--body-font);
+    color: var(--color-grey-dark);
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    
+    &:not(:last-child) {
+        margin-bottom: 2.5rem;
+    }
+}
+
+////////////////////////////////////////////////
+//Use for headings
+.heading-primary {
+    font-size: 7rem;
+    font-weight: 600;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    color: var(--color-grey-dark);
+    
+    @include respond(tab-xl) {
+        font-size: 6rem;
+        letter-spacing: .7rem;
+    }
+    
+    @include respond(tablet) {
+        font-size: 4rem;
+        letter-spacing: .5rem;
+    }
+    
+    @include respond(phone) {
+        font-size: 2.5rem;
+        letter-spacing: .4rem;
+    }
+}
+
+.heading-secondary {
+    font-size: 5rem;
+    font-weight: 550;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    color: var(--color-grey-dark);
+
+    @include respond(tab-xl) {
+        font-size: 3.5rem;
+    }
+    
+    @include respond(tablet) {
+        font-size: 3rem;
+        letter-spacing: .4rem;
+    }
+    
+    @include respond(phone) {
+        font-size: 2rem;
+    }
+}
+
+.heading-tertiary {
+    font-size: 3rem;
+    font-weight:600;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    color: var(--color-grey-dark);
+    
+    @include respond(tab-xl) {
+        font-size: 2.3rem;
+    }
+    
+    @include respond(tablet) {
+        font-size: 2rem;
+        letter-spacing: .4rem;
+    }
+    
+    @include respond(phone) {
+        font-size: 1.6rem;
+    }
+}
+
+////////////////////////////////////////////////
+//Use anywhere.
+.custom-text {
+    font-family: var(--body-font);
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: none;
+    
+    &--bold {
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+}
+
+
+////////////////////////////////////////////////
+//Use for copyright.
+.copyright {
+    font-size: 1.2rem;
+    color: var(--color-grey-dark);
+}

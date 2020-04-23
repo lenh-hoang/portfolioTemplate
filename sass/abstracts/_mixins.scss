@@ -1,0 +1,102 @@
+/////////////////////////////////////////////////////
+//MEDIA QUERY MANAGER
+
+/*
+0 - 600px:           Phone
+600 - 900px:         Tablet 
+900 - 1200px:        Tablet XL
+[1200 - 1800]        Normal Desktop 
+1800px + :           Large Desktop
+
+$breakpoint arguement choices:
+- phone
+- tablet
+- tab-xl
+- desktop
+
+ORDER: BASE > TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
+
+Use em instead of rem
+
+1em = 16px
+*/
+
+@mixin respond($breakpoint) { 
+
+    //PHONE
+    @if $breakpoint == phone { 
+        @media only screen and (max-width: 37.5em) { @content }; //600px
+    }
+
+    //TABLET
+    @if $breakpoint == tablet { 
+        @media only screen and (max-width: 56.25em) { @content }; //900px
+    }
+
+    //TABLET XL
+    @if $breakpoint == tab-xl { 
+        @media only screen and (max-width: 75em) { @content }; //1200px
+    }
+
+    //DESKTOP+
+    @if $breakpoint == desktop { 
+        @media only screen and (min-width: 112.5em) { @content }; //1800px
+    }    
+}
+
+
+/////////////////////////////////////////////////////
+//THUMBNAILS
+@mixin thumbnail($element) {
+    //ITEM
+    @if $element == item {
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    
+    //IMAGE
+    @if $element == img {
+        width: 100%;
+        display: block;
+    }
+    
+    //TITLE
+    @if $element == title {
+        
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+    }
+    
+    //TYPE OF WORK
+    @if $element == type {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        letter-spacing: 1.2px; 
+    }
+    
+    //OVERLAY
+    @if $element == overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        opacity: 0;
+        transition: .5s ease-out;
+        background-color: rgba(0,0,0, .7);
+    }
+}
+
+
+

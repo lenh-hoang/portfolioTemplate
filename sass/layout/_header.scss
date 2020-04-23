@@ -1,0 +1,78 @@
+//HEADER
+.header {
+    margin: 0 auto;
+    padding-top: 10rem ;
+    padding-bottom: 5rem;
+}
+
+////////////////////////////////////////////////
+//LOGO HERE
+.logo-photo {
+    display: block;
+    height: 10rem;
+    width: 10rem;
+
+    //REMOVE AFTER ADDING LOGO PICTURE
+    background-color: var(--color-primary);
+}
+
+////////////////////////////////////////////////
+//TITLE HERE
+.section-title {
+    margin: 0 auto;
+    padding: 4rem 0;
+    
+    @include respond(tablet) {
+        padding: 3rem;
+    }
+}
+
+////////////////////////////////////////////////
+//SOCIAL MEDIA, CONNECTION, RESUME LINKS
+.connections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    @include respond(phone) {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+    }
+}
+
+.social-media {
+    margin-left: 2rem;
+    list-style: none; 
+    color: var(--color-grey-dark);
+
+    &__item {
+        padding: .5rem 0rem;
+    }
+
+    &__icon {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    
+    &__link {
+        &,
+        &:link,
+        &:visited {
+            font-size: 1.5rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+        
+
+    }
+    
+    @include respond(phone) {
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+}
+
+

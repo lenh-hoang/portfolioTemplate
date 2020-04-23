@@ -1,0 +1,59 @@
+///////////////////////////////////////
+//Section for links to sources.
+.section-sources {
+    padding: 2rem 0 5rem 0;
+    
+    @include respond(tablet) {
+        padding: 1.3rem 0 3.5rem 0;
+    }
+}
+
+///////////////////////////////////////
+//Section for images and showcases.
+.section-img {
+    padding: 4rem 0;
+    
+    @include respond(tablet) {
+        padding: 3rem 0;
+    }
+}
+
+///////////////////////////////////////
+//Section for introduction.
+.section-intro {
+    padding: 4rem 0;
+    
+    @include respond(tablet) {
+        padding: 3rem 0;
+    }
+}
+
+///////////////////////////////////////
+//Section for beginning.
+.section-start {
+    padding: 4rem 0;
+    
+    @include respond(tablet) {
+        padding: 3rem 0;
+    }
+}
+
+///////////////////////////////////////
+//Section for middle.
+.section-middle {
+    padding: 4rem 0;
+    
+    @include respond(tablet) {
+        padding: 3rem 0;
+    }
+}
+
+///////////////////////////////////////
+//Section for end.
+.section-end {
+    padding: 4rem 0;
+    
+    @include respond(tablet) {
+        padding: 3rem 0;
+    }
+}

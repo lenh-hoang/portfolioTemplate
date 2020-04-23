@@ -1,0 +1,261 @@
+///////////////////////////////////////////
+//GRID FOR PORTFOLIO SETUP
+.portfolio {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    
+    @include respond(tab-xl) {
+        grid-template-columns: 1fr;
+    }
+    
+    ///////////////////////////////////////////
+    //FOR EDITING ALL ITEMS AT ONCE.
+    
+    & > * {
+        cursor: pointer;
+    }
+    
+    ///////////////////////////////////////////
+    //For editing thumbnails, please go to "abstracts/_mixins.scss"
+
+    ///////////////////////////////////////////
+    //ITEM 1
+    
+    &__item-1 {
+        @include thumbnail(item);
+
+        //**IMPORTANT PLEASE READ**
+        //REMOVE THESE SETTINGS AFTER IMAGE IS ADDED
+        width: 100%;
+        height: 30rem;
+        background-color: aquamarine;
+        
+
+
+        //EDIT IMAGE 
+        &--img {
+            //opacity: 0;
+            @include thumbnail(img);
+        }
+
+        //EDIT TITLE
+        &--title {
+            @include thumbnail(title);
+            color: var(--color-white);
+
+        }
+        
+        //EDIT TYPE OF WORK
+        &--type {
+            @include thumbnail(type);
+            color: aquamarine;
+
+        }
+
+        //EDIT OVERLAY
+        &--overlay {
+            @include thumbnail(overlay);
+        }
+
+        &:hover &--overlay {
+            opacity: 1;
+        }
+    
+        
+    }
+
+    
+    
+    ///////////////////////////////////////////
+    //ITEM 2
+    
+    &__item-2 {
+        @include thumbnail(item);
+
+
+        //**IMPORTANT PLEASE READ**
+        //REMOVE THESE SETTINGS AFTER IMAGE IS ADDED
+        width: 100%;
+        height: 30rem;
+        background-color: aquamarine;
+        
+
+
+
+        //EDIT IMAGE 
+        &--img {
+            //opacity: 0;
+            @include thumbnail(img);
+        }
+
+        //EDIT TITLE
+        &--title {
+            @include thumbnail(title);
+            color: var(--color-white);
+
+        }
+        
+        //EDIT TYPE OF WORK
+        &--type {
+            @include thumbnail(type);
+            color: aquamarine;
+
+        }
+
+        //EDIT OVERLAY
+        &--overlay {
+            @include thumbnail(overlay);
+        }
+
+        &:hover &--overlay {
+            opacity: 1;
+        }
+    
+        
+    }
+    
+
+    
+    
+    
+    ///////////////////////////////////////////
+    //ITEM 3
+    
+    &__item-3 {
+        @include thumbnail(item);
+
+
+        //**IMPORTANT PLEASE READ**
+        //REMOVE THESE SETTINGS AFTER IMAGE IS ADDED
+        width: 100%;
+        height: 30rem;
+        background-color: aquamarine;
+        
+
+
+
+        //EDIT IMAGE 
+        &--img {
+            //opacity: 0;
+            @include thumbnail(img);
+        }
+
+        //EDIT TITLE
+        &--title {
+            @include thumbnail(title);
+            color: var(--color-white);
+
+        }
+        
+        //EDIT TYPE OF WORK
+        &--type {
+            @include thumbnail(type);
+            color: aquamarine;
+
+        }
+
+        //EDIT OVERLAY
+        &--overlay {
+            @include thumbnail(overlay);
+        }
+
+        &:hover &--overlay {
+            opacity: 1;
+        }
+    
+        
+    }
+    
+
+    ///////////////////////////////////////////
+    //ITEM 4
+    &__item-4 {
+        @include thumbnail(item);
+
+
+        //**IMPORTANT PLEASE READ**
+        //REMOVE THESE SETTINGS AFTER IMAGE IS ADDED
+        width: 100%;
+        height: 30rem;
+        background-color: aquamarine;
+        
+
+
+
+        //EDIT IMAGE 
+        &--img {
+            //opacity: 0;
+            @include thumbnail(img);
+        }
+
+        //EDIT TITLE
+        &--title {
+            @include thumbnail(title);
+            color: var(--color-white);
+
+        }
+        
+        //EDIT TYPE OF WORK
+        &--type {
+            @include thumbnail(type);
+            color: aquamarine;
+
+        }
+
+        //EDIT OVERLAY
+        &--overlay {
+            @include thumbnail(overlay);
+        }
+
+        &:hover &--overlay {
+            opacity: 1;
+        }
+    
+        
+    }
+
+    /* EXAMPLE ADD ON. Feel free to try it.
+    ///////////////////////////////////////////
+    //ITEM 5
+    &__item-5 {
+        @include thumbnail(item);
+
+        
+        //EDIT IMAGE 
+        &--img {
+            //opacity: 0;
+            @include thumbnail(img);
+        }
+
+        //EDIT TITLE
+        &--title {
+            @include thumbnail(title);
+            color: var(--color-white);
+
+        }
+        
+        //EDIT TYPE OF WORK
+        &--type {
+            @include thumbnail(type);
+            color: aquamarine;
+
+        }
+
+        //EDIT OVERLAY
+        &--overlay {
+            @include thumbnail(overlay);
+        }
+
+        &:hover &--overlay {
+            opacity: 1;
+        }
+    
+        
+    }
+    */
+    
+}
