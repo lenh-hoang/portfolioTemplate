@@ -3,7 +3,9 @@
 :root {
     ///////////////////////////////////////
     //COLORS
-    --color-primary: #00904B;
+
+    //Remove gray and choose the color of your choice.
+    --color-primary: gray;
     
     --color-black: #000;
     --color-white: #fff;
@@ -13,7 +15,7 @@
 
 
     ///////////////////////////////////////
-    //BODY FONTS
+    //BODY FONTS. Change to desired body font here.
     --body-font: "Montserrat", sans-serif;
     
     ///////////////////////////////////////

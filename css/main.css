@@ -18,7 +18,7 @@ Use em instead of rem
 1em = 16px
 */
 :root {
-  --color-primary: #00904B;
+  --color-primary: gray;
   --color-black: #000;
   --color-white: #fff;
   --color-grey: #737373;
@@ -200,8 +200,8 @@ body {
 .showcase {
   width: 100%;
   height: 40rem;
-  background-color: aquamarine;
-  color: aquamarine; }
+  background-color: gray;
+  color: gray; }
   .showcase__img {
     width: 100%;
     display: block; }
@@ -311,7 +311,7 @@ body {
     position: relative;
     width: 100%;
     height: 30rem;
-    background-color: aquamarine; }
+    background-color: gray; }
     .portfolio__item-1--img {
       width: 100%;
       display: block; }
@@ -350,7 +350,7 @@ body {
     position: relative;
     width: 100%;
     height: 30rem;
-    background-color: aquamarine; }
+    background-color: gray; }
     .portfolio__item-2--img {
       width: 100%;
       display: block; }
@@ -389,7 +389,7 @@ body {
     position: relative;
     width: 100%;
     height: 30rem;
-    background-color: aquamarine; }
+    background-color: gray; }
     .portfolio__item-3--img {
       width: 100%;
       display: block; }
@@ -428,7 +428,7 @@ body {
     position: relative;
     width: 100%;
     height: 30rem;
-    background-color: aquamarine; }
+    background-color: gray; }
     .portfolio__item-4--img {
       width: 100%;
       display: block; }
