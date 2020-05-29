@@ -14,6 +14,6 @@ will show you how to apply your content and edit source code to fit your needs.
 
 **Requires SASS to properly edit**
 
-Editing the CSS in the tradtional fashion is fine, and all class names remain the same but instructions are setup to navigate SASS files.
+Editing the CSS in the traditional fashion is fine, and all class names remain the same but instructions are setup to navigate SASS files.
 
 This source code is subjected to changes and updates at any time.
